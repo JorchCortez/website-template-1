@@ -315,9 +315,7 @@ html body {
     transform: rotate(45deg);
     -webkit-transform: rotate(-45deg);
     transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
+    -webkit-transition: all 0.3s; 
 }
 
 .read-more:hover p {
@@ -521,7 +519,7 @@ h1 {
     min-height: 50px !important;
     height: auto;
     padding: 10px 0;
-    background: #E4E4E4;
+    background: #2d2d2d;
     display: flex;
     flex-wrap: wrap;
 }
@@ -532,7 +530,7 @@ h1 {
 }
 
 .pageFooter>div>h2 {
-    color: #2d2d2d;
+    color: #E4E4E4;
     font-weight: 400;
     margin-bottom: 5px;
 }
@@ -548,7 +546,13 @@ h1 {
 }
 
 .pageFooter>div>ul>li>a {
-    color: #3499e1;
+    color: #E4E4E4;
+    text-decoration: none;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s; 
+}
+.pageFooter>div>ul>li>a:hover {
+    color: #BF2C2C;
     text-decoration: none;
 }
 
@@ -674,9 +678,13 @@ h1 {
     }
 }
 
+.contacto{ 
+    background: url(../resources/contact-bg.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
 /*contact form*/
-.modalContainer {
-    background: #404040;
+.modalContainer { 
     width: 100vw;
     height: auto;
     display: flex;
@@ -687,7 +695,7 @@ h1 {
 }
 
 .formContainer {
-    background: #2d2d2d;
+    background: rgba(0,0,0,0.70);
     height: auto;
     width: 50%;
     padding: 30px;
@@ -735,7 +743,7 @@ select {
     text-decoration: underline;
 }
 
-.login {
+.send {
     font-size: 1.2em;
     background: #d04925;
     text-align: center;
