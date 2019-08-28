@@ -9,7 +9,7 @@
                 <!-- Logo container -->
                 <a href='#' target='_blank' class="logo-wrap">
                     <img class="logo" src="./resources/logo.png" alt="Logo" >
-                </a>
+                </a> 
                 
                 <!-- When this is checked, nav menu is dropped -->
                 <input type='checkbox' id='nav-tog'>
@@ -31,8 +31,14 @@
                     <a href='#portfolio' class="nav-item">
                        <span> inicio </span>
                     </a>
-                    <a href='#bio' class="nav-item">
-                        <span> nosotros </span>
+                    <a href='#nosotros' id="menu_nosotros" class="nav-item"> 
+                        <div class="dropdown">
+                            <span  class="dropbtn"> nosotros </span>
+                            <div class="dropdown-content">
+                                <span href="#" id="mision">Mision</span>
+                                <span href="#" id="vision">Vision</span> 
+                            </div>
+                        </div>
                     </a>
                     <a href='#services' class="nav-item">
                         <span> servicios </span>
@@ -64,38 +70,14 @@
             </div>
           </section>
 
-          <section id="about">
-            <h1 class="h-center">¿Quienes somos?</h1>
-            <div class="about-container">
-              <div class="about-sections">
-                <div class="about-s-title active" id="nosotros" >Nosotros</div>
-                <div class="about-s-title" id="mision">Misión</div>
-                <div class="about-s-title" id="vision">Visión</div>
-              </div>
-              <div class="about-content">
-                <div class="content-text active-content" id="nosotros-content">
-                    <div class="cont-bottom">
-                        En GOESA, somos una empresa creada en 2019, nuestro personal cuenta con mas de 30 años de experiencia 
-                        en el ramo de la consultoría en la cadena logística y el mantenimiento vehicular, nuestro principal objetivo 
-                        es satisfacer las necesidades de nuestros clientes, ofreciéndoles servicios y productos de la mejor calidad.
-                    </div>
-                </div>  
-                <div class="content-text" id="mision-content">
-                        <div class="cont-bottom">
-                            Ser la empresa líder en servicios de mantenimiento y asesoría, comprometidos en proporcionar a nuestros clientes 
-                            productos y servicios de la más alta calidad que satisfagan sus necesidades, siempre procurando el bien común
-                        </div>
-                </div>  
-                <div class="content-text" id="vision-content">
-                        <div class="cont-bottom">
-                            Ser la mejor opción en el mercado en la prestación de nuestros servicios de consultoría de la cadena logística, 
-                            así como en el servicio de mantenimiento, con una alta calidad y confiabilidad en nuestra operación, 
-                            apegado a principios y valores cumpliendo siempre con las disposiciones legales y fiscales.
-                        </div>
-                </div>  
-              <div>
-            </div>
-          </section>
+            <section id="nosotros">
+                <div class="paralax-colorizer">
+                    <h1>Quienes Somos</h1>
+                    <p>Somos una empresa con mas de 30 años de experiencia en el ramo del mantenimiento vehicular, 
+                        en la consultoría y en la cadena logística; nuestro principal objetivo  es satisfacer las 
+                        necesidades de nuestros clientes, ofreciéndoles servicios y productos de la mejor calidad.</p>
+                </div>
+            </section>
           <section id="service">
               <div class="service-container-1">
                     <div class="service-image"></div>
@@ -187,6 +169,21 @@
                 <div class="doneBy"><a href="https://www.thecoderaccoons.com/">TheCodeRaccoons</a> ©2018 - 2019 Company</div>
             </section>
     </body> 
+ 
+    <!-- The Modal -->
+    <div id="myModal" class="modal"> 
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2><span id="modalTitle"></span></h2>
+            </div>
+            <div class="modal-body">
+            <p><span id="modalContent"></span></p> 
+            </div> 
+        </div> 
+    </div>
+
     <script src="./js/jquery.min.js"></script>
     <script src="./js/index.js"></script>
  </html>
