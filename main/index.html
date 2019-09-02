@@ -4,170 +4,79 @@
         <title>GOESA</title>
     </head>
 
-    <header class='main-header'>
-            <div class="menu-wrap">
-                <!-- Logo container -->
-                <a href='#' target='_blank' class="logo-wrap">
-                    <img class="logo" src="./resources/logo.png" alt="Logo" >
-                </a> 
-                
-                <!-- When this is checked, nav menu is dropped -->
-                <input type='checkbox' id='nav-tog'>
-        
-                <!-- Hamburger btn -->
-                <label for='nav-tog'  class="drop-trigger">
-                    <!-- Hamburg bars -->
-                    <span class="btn-bar top"></span>
-                    <span class='btn-bar middle'></span>
-                    <span class='btn-bar bottom'></span>
-                </label>
-        
-                <!-- Menu -->
-                <nav class="main-nav">
-                    <!-- This covers the whole background of the dropped menu -->
-                    <label for='nav-tog' class='nav-revert'></label>
-        
-                    <!-- Menu items -->
-                    <a href='#portfolio' class="nav-item">
-                       <span> inicio </span>
-                    </a>
-                    <a href='#nosotros' id="menu_nosotros" class="nav-item"> 
-                        <div class="dropdown">
-                            <span  class="dropbtn"> nosotros </span>
-                            <div class="dropdown-content">
-                                <span href="#" id="mision">Mision</span>
-                                <span href="#" id="vision">Vision</span> 
-                            </div>
-                        </div>
-                    </a>
-                    <a href='#services' class="nav-item">
-                        <span> servicios </span>
-                    </a>
-                    <a href='#contact' class="nav-item">
-                        <span> contacto </span>
-                    </a>
-                </nav>
-            </div>
-    </header>
-
     <body>
-        <section id="title">
-            <div class="title-mask">
-            <div class="logo-container">
-              <img src="./resources/logo.png" />
-            </div>
-            <div class="title-text">
-                <span>
-                    Buscando satisfacer a nuestros clientes con servicios y productos de la mejor calidad.
-                </span>
-            </div>
-            <div class="read-more">
-                <p>Read more</p>
-                <div class="arrow">
-                <div class="arrow-mask"></div>
+        <!--Nav menu-->
+        <header class='main-header'>
+                <div class="menu-wrap">
+                    <!-- Logo container -->
+                    <a href='#' target='_blank' class="logo-wrap">
+                        <img class="logo" src="./resources/logo.png" alt="Logo" >
+                    </a> 
+                    
+                    <!-- When this is checked, nav menu is dropped -->
+                    <input type='checkbox' id='nav-tog'>
+            
+                    <!-- Hamburger btn -->
+                    <label for='nav-tog'  class="drop-trigger">
+                        <!-- Hamburg bars -->
+                        <span class="btn-bar top"></span>
+                        <span class='btn-bar middle'></span>
+                        <span class='btn-bar bottom'></span>
+                    </label>
+            
+                    <!-- Menu -->
+                    <nav class="main-nav">
+                        <!-- This covers the whole background of the dropped menu -->
+                        <label for='nav-tog' class='nav-revert'></label>
+            
+                        <!-- Menu items -->
+                        <a href='#portfolio' class="nav-item">
+                            <span> inicio </span>
+                        </a>
+                        <a href='#nosotros' id="menu_nosotros" class="nav-item"> 
+                            <div class="dropdown">
+                                <span  class="dropbtn"> nosotros </span>
+                                <div class="dropdown-content">
+                                    <span href="#" id="mision">Mision</span>
+                                    <span href="#" id="vision">Vision</span> 
+                                </div>
+                            </div>
+                        </a>
+                        <a href='#services' class="nav-item">
+                            <span> servicios </span>
+                        </a>
+                        <a href='#contact' class="nav-item">
+                            <span> contacto </span>
+                        </a>
+                    </nav>
                 </div>
-            </div>
-            </div>
-          </section>
+        </header> 
+        <!--Nav menu-->
+        <!--Sections-->
+        <section class="index">
+            <div class="section-container"> 
+                <h1>Buscando satisfacer a nuestros clientes con servicios y productos de la mejor calidad</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-            <section id="nosotros">
-                <div class="paralax-colorizer">
-                    <h1>Quienes Somos</h1>
-                    <p>Somos una empresa con mas de 30 años de experiencia en el ramo del mantenimiento vehicular, 
-                        en la consultoría y en la cadena logística; nuestro principal objetivo  es satisfacer las 
-                        necesidades de nuestros clientes, ofreciéndoles servicios y productos de la mejor calidad.</p>
-                </div>
-            </section>
-          <section id="service">
-              <div class="service-container-1">
-                    <div class="service-image"></div>
-                    <div class="service-desc">
-                        <h1>Mantenimiento Vehicular</h1>
-                        <ul>
-                            <li>Realizamos la administración total del servicio y la ejecución de mantenimientos a vehículos multimarca.</li> 
-                                <ul style="padding-left: 40px;">
-                                    <li>Preventivo</li> 
-                                    <li>Correctivo</li>
-                                    <li>Predictivo</li>
-                                    <li>En carretera</li>
-                                    <li>Daños operativos</li>
-                                    <li>Accidentes </li>
-                                </ul>
-                            <li>Los servicios los podemos realizar en instalaciones de los clientes con personal in house donde las herramientas y equipos de taller, asi como las computadoras, sistemas tecnológicos para la administración son propiedad nuestra.</li>
-                            <li>Las refacciones o repuestos a utilizar serán adquiridos y administrados por nosotros. Si existiera un cliente que proporcione las refacciones o repuestos el servicio se podrá realizar.</li>
-                            <li>El personal empleado y técnico será responsabilidad nuestra, asi como su debida afiliación.</li>
-                            <li>El manejo de residuos peligrosos será responsabilidad nuestra, para lo cual el propietario del predio otorgara en como dato las instalaciones a utilizar para la realización del servicio de mantenimiento y confinamiento de los residuos.</li>
-                        </ul>
-                    </div>
-              </div> 
-              <div class="service-container-2">
-                  <div class="service-desc">
-                        <h1>Ingeniería Vehicular</h1>
-                        <ul>
-                            <li>Analizamos la operación de nuestro cliente para detectar las áreas de oportunidad que permitan maximizar el movimiento de sus productos cumpliendo con las normas de pesos y dimensiones.</li>
-                            <li>Diseñamos el vehículo idóneo que otorgue las ventajas competitivas de eficiencia y/o costo con la mas alta tecnología del mercado actual.</li>
-                            <li>Realizamos un análisis técnicos comparativos de vehículos del mercado estableciendo la mejor opción.</li>
-                            <li>Establecemos la vida útil de los vehículos por tipo de operación que permita maximizar la disponibilidad al mínimo costo posible.</li>
-                            <li>Realizamos estudios constante de la confiabilidad operativa de los vehículos con el objetivo de lograr la mejora continua en todos y cada uno de sus componentes.</li>
-                        </ul>
-                  </div>
-                  <div class="service-image"></div> 
-              </div>
-              <div class="service-container-3">
-                    <div class="service-image"></div>
-                    <div class="service-desc">
-                        <h1>Consultoría y acompañamiento</h1>
-                        <ul>
-                            <li>Realizamos una evaluación detallada de las diferentes áreas que componen el mantenimiento de vehículos, con el objetivo de encontrar oportunidades que mejoren la productividad, la coordinación, el apego a proceso, la seguridad, la competitividad y sobre todo, que asegure la confiabilidad de la operación del cliente.</li>
-                            <li>Hacemos un análisis profundo de las oportunidades, para establecer soluciones innovadoras, implementables y con un sentido de productividad desde el inicio.</li>
-                            <li>Ejecutamos las soluciones propuestas en conjunto con el cliente para asegurar su entrenamiento y comprensión para lograr el desarrollo de las habilidades necesarias para lograr los resultados a corto, mediano y largo plazo.</li>
-                        </ul>
-                    </div>
-              </div> 
-          </section>
-<!--Contact form-->
-            <section class="contacto">
-                <div class="modalContainer"> 
-                    <div class="formContainer">
-                        <div class="formTitle">Contáctanos</div>
-                        <label>*Nombre:</label required>
-                        <input type="text">
-                        <label>*Correo:</label>
-                        <input type="email" required>
-                        <label>*Comentarios:</label>
-                        <textarea rows="8" required> </textarea> 
-                        <div class="send" >Enviar</div>
-                    </div>
-                    </div>
-            </section>
-
-<!--Footer-->
-          <section class="pageFooter">
-                <div class="Information">
-                    <h2>Information</h2>
-                    <ul> 
-                        <li><a href="http://thecoderaccoons.com">Services</a></li>
-                        <li><a href="http://thecoderaccoons.com">Developers</a></li>
-                    </ul>
-                </div>
-                <div class="About">
-                    <h2>About</h2>
-                    <ul>
-                        <li><a href="http://thecoderaccoons.com">Who are we?</a></li>
-                        <li><a href="http://thecoderaccoons.com">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="Contact">
-                    <h2>Contact</h2>
-                    <div class="contact-mail">
-                        <input type="email" required>
-                        </input>
-                        <button class="btn-contact">Contact</button>
-                    </div>
-                </div>
-                <span class="linebreak"></span>
-                <div class="doneBy"><a href="https://www.thecoderaccoons.com/">GOESA</a> ©2019 Company</div>
-            </section>
+                <div class="nosotros">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div> 
+            </div>
+        </section>
+        <section class="servicios"> 
+                <h1>A simple ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+        </section> 
+        <!--Sections-->
     </body> 
  
     <!-- The Modal -->
