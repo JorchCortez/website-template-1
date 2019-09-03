@@ -295,8 +295,7 @@ body{
 ********************/
 .dropbtn { 
     border: none;
-    cursor: pointer;
-    text-decoration: underline;
+    cursor: pointer; 
 }
 
 .dropdown {
@@ -336,13 +335,7 @@ body{
 /*******************
        Dropdown
 ********************/
-
-#nosotros{
-    width: 100%;
-    height: 300px;
-    background: url(../resources/parallax-bg.png) no-repeat center center fixed;
-    background-size: cover;
-}
+ 
 
 .paralax-colorizer{ 
     display: flex;
@@ -405,8 +398,9 @@ body{
 .section-container{ 
     padding: 90px;
     padding-bottom: 20px;
-    background:linear-gradient(to bottom,rgba(191, 44, 44, 0),
-                                         rgba(191, 44, 44, 0.9),
+    background:linear-gradient(to bottom,rgba(105, 90, 90, 0),
+                                         rgba(191, 44, 44, 0.4),
+                                         rgba(191, 44, 44, 1),
                                          rgba(191, 44, 44, 1))
 }
  
@@ -447,16 +441,140 @@ body{
     line-height: 1.5em;
 }
 
-/*Section Servicios*/
-.servicios{
+
+
+/*Seccion objetivos*/
+.objetivos{ 
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: #2C2F33;  
+    padding: 0;
+    color: #fff; 
     font-size: 1.5em;
-    padding: 0 50px 100px;
-    color: gray;
+    padding: 0 50px 100px; 
     text-align: right;
     line-height: 1.5em;  
-    margin-top: 200px;
+    margin-top: 17.6%;
+    z-index: 10;
 }
 
+.objetivos::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: #2C2F33;  
+    transform-origin: bottom left;
+    transform: skewY(-10deg);
+    z-index: -1;
+}
+
+.objetivos::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: #2C2F33;  
+    transform-origin: top left;
+    transform: skewY(10deg);
+    z-index: -1;
+}
+
+
+/*******************
+      Servicios 
+********************/
+.servicios {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 90%;
+    background: rgb(255, 255, 255);  
+    padding: 0;
+    color: #fff; 
+    font-size: 1.5em;
+    padding: 0 50px 100px;  
+    line-height: 1.5em;  
+    margin-top: 17.6%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: space-between;
+}
+ 
+
+.servicios>h1{
+    width: 100%;
+    padding: 25px 0;
+    margin: auto;
+    text-align: center;
+    font-size: 2em;
+    color: #2C2F33;
+}
+
+.servicios>.service-view{ 
+    width: 30%;
+    height: 400px; 
+}
+
+.service-view>.service-title{
+    width: 100%;
+    background: #BF2C2C;
+    height: 70px;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.service-view>.service-container{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background: #2d2d2d;
+    
+}
+
+/*******************
+       contacto
+********************/
+.contacto{
+    width: 100%;
+    height: 500px;
+    background: #BF2C2C;
+    padding-top: 50px;
+}
+
+/*******************
+    triangleView 
+********************/
+.service-view>svg#triangleView {
+	pointer-events: none;
+    background: transparent;
+}
+.service-view>#triangleView path {
+	fill: #2d2d2d;
+	stroke: #2d2d2d;
+	stroke-width: 2;
+}
+
+svg#triangleView {
+	pointer-events: none;
+    background: #BF2C2C;
+}
+
+#triangleView path {
+	fill: rgb(255, 255, 255);
+	stroke: rgb(255, 255, 255);
+	stroke-width: 2;
+}
 
 /*******************
     Media  Querys
@@ -552,4 +670,11 @@ body{
         width: 100%;
         padding: 2.5%; 
     }  
+
+    .servicios>.service-view{ 
+        width: 100%; 
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
 } 
