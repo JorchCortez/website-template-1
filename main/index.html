@@ -1,152 +1,165 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="./style/main.css">
-        <title>GOESA</title>
-    </head>
 
-    <body>
-        <!--Nav menu-->
-        <header class='main-header'>
-                <div class="menu-wrap">
-                    <!-- Logo container -->
-                    <a href='#' target='_blank' class="logo-wrap">
-                        <img class="logo" src="./resources/logo.png" alt="Logo" >
-                    </a> 
-                    
-                    <!-- When this is checked, nav menu is dropped -->
-                    <input type='checkbox' id='nav-tog'>
-            
-                    <!-- Hamburger btn -->
-                    <label for='nav-tog'  class="drop-trigger">
-                        <!-- Hamburg bars -->
-                        <span class="btn-bar top"></span>
-                        <span class='btn-bar middle'></span>
-                        <span class='btn-bar bottom'></span>
-                    </label>
-            
-                    <!-- Menu -->
-                    <nav class="main-nav">
-                        <!-- This covers the whole background of the dropped menu -->
-                        <label for='nav-tog' class='nav-revert'></label>
-            
-                        <!-- Menu items -->
-                        <a href='#portfolio' class="nav-item">
-                            <span> inicio </span>
-                        </a>
-                        <a href='#nosotros' id="menu_nosotros" class="nav-item"> 
-                            <div class="dropdown">
-                                <span  class="dropbtn"> nosotros </span>
-                                <div class="dropdown-content">
-                                    <span href="#" id="mision">Mision</span>
-                                    <span href="#" id="vision">Vision</span> 
-                                </div>
-                            </div>
-                        </a>
-                        <a href='#services' class="nav-item">
-                            <span> servicios </span>
-                        </a>
-                        <a href='#contact' class="nav-item">
-                            <span> contacto </span>
-                        </a>
-                    </nav>
-                </div>
-        </header> 
-        <!--Nav menu-->
-        <!--Sections-->
-        
-        <section class="index">
-            <div class="section-container"> 
-                <div class="page--header">
-                    <span class="title">
-                        <img src="./resources/logo.png">
-                    </span>
-                    <span class="title light">Buscando brindar</span>
-                    <span class="title bold">Los servicios y productos de la mejor calidad</span> 
-                    <span class="title light">para nuestros clientes</span>
-                </div> 
-                
-                <div class="nosotros">
-                        <h1>¿Quiénes somos?</h1>
-                        <p>Somos una empresa con mas de 30 años de experiencia en el 
-                        ramo de la consultoría en la cadena logística y el mantenimiento vehicular, nuestro principal 
-                        objetivo  es satisfacer las necesidades de nuestros clientes, ofreciéndoles servicios y productos 
-                        de la mejor calidad.</p>
-                </div> 
-            </div>
-        </section>
-        <section class="objetivos">  
-                <h1>A simple ipsum</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>      
-          
-        </section> 
-        <section class="servicios">
-            <h1>Servicios</h1>
-            <div class="service-view">
-                        <div class="service-title">
-                            Serv 1
+<head>
+    <link rel="stylesheet" href="./style/main.css">
+    <title>GOESA</title>
+</head>
+
+<body>
+    <!--Nav menu-->
+    <header class='main-header'>
+        <div class="menu-wrap">
+            <!-- Logo container -->
+            <a href='#' target='_blank' class="logo-wrap">
+                <img class="logo" src="./resources/logo.png" alt="Logo">
+            </a>
+
+            <!-- When this is checked, nav menu is dropped -->
+            <input type='checkbox' id='nav-tog'>
+
+            <!-- Hamburger btn -->
+            <label for='nav-tog' class="drop-trigger">
+                <!-- Hamburg bars -->
+                <span class="btn-bar top"></span>
+                <span class='btn-bar middle'></span>
+                <span class='btn-bar bottom'></span>
+            </label>
+
+            <!-- Menu -->
+            <nav class="main-nav">
+                <!-- This covers the whole background of the dropped menu -->
+                <label for='nav-tog' class='nav-revert'></label>
+
+                <!-- Menu items -->
+                <a href='#portfolio' class="nav-item">
+                    <span> inicio </span>
+                </a>
+                <a href='#nosotros' id="menu_nosotros" class="nav-item">
+                    <div class="dropdown">
+                        <span class="dropbtn"> nosotros </span>
+                        <div class="dropdown-content">
+                            <span href="#" id="mision">Mision</span>
+                            <span href="#" id="vision">Vision</span>
                         </div>
-                    <div class="service-container"> 
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </div>
-                    <svg id="triangleView" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
-                        <path d="M0 0 L50 100 L100 0 Z" />
-                    </svg>
-            </div>
-            <div class="service-view">
-                    <div class="service-title">
-                            Serv 1
-                    </div>
-                    <div class="service-container">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </div>
-                    <svg id="triangleView" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
-                        <path d="M0 0 L50 100 L100 0 Z" />
-                    </svg>
-            </div>
-            <div class="service-view">
-                    <div class="service-title">
-                            Serv 1
-                    </div>
-                    <div class="service-container">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </div>
-                    <svg id="triangleView" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
-                        <path d="M0 0 L50 100 L100 0 Z" />
-                    </svg>
+                </a>
+                <a href='#services' class="nav-item">
+                    <span> servicios </span>
+                </a>
+                <a href='#contact' class="nav-item">
+                    <span> contacto </span>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <!--Nav menu-->
+    <!--Sections-->
+
+    <section class="index">
+        <div class="section-container">
+            <div class="page--header">
+                <span class="title">
+                    <img src="./resources/logo.png">
+                </span>
+                <span class="title light">Buscando brindar</span>
+                <span class="title bold">Los servicios y productos de la mejor calidad</span>
+                <span class="title light">para nuestros clientes</span>
             </div>
 
+            <div class="nosotros">
+                <h1>¿Quiénes somos?</h1>
+                <p>Somos una empresa con mas de 30 años de experiencia en el
+                    ramo de la consultoría en la cadena logística y el mantenimiento vehicular, nuestro principal
+                    objetivo es satisfacer las necesidades de nuestros clientes, ofreciéndoles servicios y productos
+                    de la mejor calidad.</p>
+            </div>
+        </div>
+    </section>
+    <section class="objetivos">
+        <h1>A simple ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.</p>
+    </section>
+    <section class="servicios">
+        <h1>Servicios</h1>
+        <div class="service-view">
+            <div class="service-title">
+                Serv 1
+            </div>
+            <div class="service-container">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+            </div>
+            <svg id="triangleView" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100"
+                viewBox="0 0 100 102" preserveAspectRatio="none">
+                <path d="M0 0 L50 100 L100 0 Z" />
+            </svg>
+        </div>
+        <div class="service-view">
+            <div class="service-title">
+                Serv 1
+            </div>
+            <div class="service-container">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+            </div>
+            <svg id="triangleView" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100"
+                viewBox="0 0 100 102" preserveAspectRatio="none">
+                <path d="M0 0 L50 100 L100 0 Z" />
+            </svg>
+        </div>
+        <div class="service-view">
+            <div class="service-title">
+                Serv 1
+            </div>
+            <div class="service-container">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+            </div>
+            <svg id="triangleView" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100"
+                viewBox="0 0 100 102" preserveAspectRatio="none">
+                <path d="M0 0 L50 100 L100 0 Z" />
+            </svg>
+        </div>
 
-        </section>
-        <svg id="triangleView" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
-            <path d="M0 0 L50 100 L100 0 Z" />
-        </svg>
 
-        <section class="contacto">
-            <h1>Contacto</h1>
-        </section>
-        <!--Sections-->
-    </body> 
- 
-    <!-- The Modal -->
-    <div id="myModal" class="modal"> 
-        <!-- Modal content -->
-        <div class="modal-content">
-            <div class="modal-header">
+    </section>
+    <svg id="triangleView" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100"
+        viewBox="0 0 100 102" preserveAspectRatio="none">
+        <path d="M0 0 L50 100 L100 0 Z" />
+    </svg>
+
+    <section class="contacto">
+        <h1>Contacto</h1>
+    </section>
+    <!--Sections-->
+</body>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
             <span class="close">&times;</span>
             <h2><span id="modalTitle"></span></h2>
-            </div>
-            <div class="modal-body">
-            <p><span id="modalContent"></span></p> 
-            </div> 
-        </div> 
+        </div>
+        <div class="modal-body">
+            <p><span id="modalContent"></span></p>
+        </div>
     </div>
+</div>
 
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/index.js"></script>
- </html>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/index.js"></script>
+
+</html>

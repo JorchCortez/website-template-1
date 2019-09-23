@@ -46,10 +46,12 @@ body{
 
 .main-header>.menu-wrap>a>img{
     opacity: 0;
+    transition: all 0.15s;
     -webkit-transition: all 0.15s;
 }
 .main-header.visible-nav>.menu-wrap>a>img{
     opacity: 100 !important;
+    transition: all 0.15s;
     -webkit-transition: all 0.15s;
 }
 
@@ -498,7 +500,7 @@ body{
     padding: 0;
     color: #fff; 
     font-size: 1.5em;
-    padding: 0 50px 100px;  
+    padding: 0 50px 150px;  
     line-height: 1.5em;  
     margin-top: 17.6%;
     display: flex;
@@ -670,11 +672,15 @@ svg#triangleView {
         width: 100%;
         padding: 2.5%; 
     }  
+} 
 
+@media only screen and (max-width: 800px)
+{
     .servicios>.service-view{ 
         width: 100%; 
         height: auto;
         display: flex;
         flex-wrap: wrap;
+        padding: 100px 0px;
     }
-} 
+}
