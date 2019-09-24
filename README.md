@@ -16,3 +16,6 @@ clear red
 
 Main red
 #BF2C2C
+
+Contributors
+__________________________-
